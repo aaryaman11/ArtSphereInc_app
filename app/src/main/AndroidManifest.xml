@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ArtSphereIncApp">
-        <activity android:name=".CreateSurveyActivity"></activity>
+        <activity android:name=".signupActivity"></activity>
+        <activity android:name=".CreateSurveyActivity" />
         <activity android:name=".SurveyActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

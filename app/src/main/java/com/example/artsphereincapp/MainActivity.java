@@ -40,11 +40,28 @@ public class MainActivity extends AppCompatActivity {
 
         //admin login
 
+        TextView signup = (TextView) findViewById(R.id.signuplink);
+
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, signupActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (email.getText().toString().equals("admin") && password.getText().toString().equals("adminpass")) {
                     openCreateSurveyActivity();
+                }
+
+                else if (email.getText().toString().equals("regular") && password.getText().toString().equals("regpass")) {
+                    openSurveyActivity();
                 }
                 else {
                     Toast.makeText(MainActivity.this, "Incorrect credentials",Toast.LENGTH_SHORT).show();
@@ -69,6 +86,23 @@ public class MainActivity extends AppCompatActivity {
         Intent logInIntent = googleSignInClient.getSignInIntent();
         startActivityForResult(logInIntent,200);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     void openCreateSurveyActivity() {
         finish();

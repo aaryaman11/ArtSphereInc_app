@@ -6,14 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".CreateSurveyActivity">
 
-    <TextView
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create Survey"
-        android:textColor="@color/black"
-        android:textSize="35dp"
-        android:layout_margin="50dp"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:id="@+id/headingSurvey"/>
+        android:text="Create Question"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+
+        />
+
+
+
+
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        >
+
+
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter Question" />
+    </LinearLayout>
+
+
+
+
 </RelativeLayout>

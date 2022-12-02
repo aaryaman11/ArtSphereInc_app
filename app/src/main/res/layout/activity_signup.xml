@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signupActivity">
+
+    <TextView
+        android:id="@+id/termQuesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select term for volunteering"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <Button
+        android:id="@+id/Longterm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Long-term"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/termQuesion"/>
+
+    <Button
+        android:id="@+id/ShortTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Short-term"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Longterm"/>
+
+
+</RelativeLayout>
