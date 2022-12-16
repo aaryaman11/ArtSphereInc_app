@@ -19,9 +19,8 @@ public class signupActivity extends AppCompatActivity {
         longterm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(signupActivity.this, OnBoarding.class);
+                Intent intent = new Intent(signupActivity.this, OnboardingActivity.class);
                 startActivity(intent);
-
             }
         });
     }
